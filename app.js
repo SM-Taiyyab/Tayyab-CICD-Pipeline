@@ -3,9 +3,10 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.send('Hello from Tayyab-CICD-Pipeline! v1\n');
+    res.send('Hello! This is tayyab\'s professional DevOps CI/CD pipeline running live via ngrok!\n');
 });
 
 app.listen(PORT, () => {
     console.log(`Running on port ${PORT}`);
 });
+
