@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-        DOCKER_IMAGE = 'taiyyabqadri/Tayyab-CICD-Pipeline'
+        DOCKER_IMAGE = 'taiyyabqadri/tayyab-CICD-Pipeline'
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
     
