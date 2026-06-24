@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-        DOCKER_IMAGE = 'taiyyabqadri/tayyab-CICD-Pipeline'
+        DOCKER_IMAGE = 'taiyyabqadri/tayyab-cicd-pipeline'
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
     
@@ -63,7 +63,7 @@ pipeline {
                 
                 echo 'Pulling fresh compiled image and deploying container to Port 3000...'
                 sh 'docker pull $DOCKER_IMAGE:latest'
-                sh 'docker run -d -p 3000:3000 --name Tayyab-CICD-Pipeline $DOCKER_IMAGE:latest'
+                sh 'docker run -d -p 3000:3000 --name tayyab-cicd-pipeline $DOCKER_IMAGE:latest'
                 
                 echo 'App is now live at localhost:3000!'
             }
